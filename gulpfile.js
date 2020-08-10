@@ -282,7 +282,41 @@ gulp.task('build:images:huge', function(done) {
     done();
 });
 
-gulp.task('build:images', gulp.series('build:images:featured', 'build:images:kitap', 'build:images:others', 'build:images:others-nonjpg', 'build:images:huge' ));
+// Drawings
+
+gulp.task('build:images:drawings', function(done) {
+  return gulp.src(paths.imageFiles + '/drawings' + paths.imagePattern)
+  .pipe(gulpCached('build:images:drawings'))
+      .pipe(responsive({
+    // resize all images
+    '*.*': [{
+      width: 60,
+      rename: { suffix: '-lq' },
+    }, {
+      width: 600,
+      rename: { suffix: '-600' },
+    }, {
+      width: 1200,
+      rename: { suffix: '-1200' },
+    }, {
+      width: 1800,
+    }]
+  }, {
+    // global configuration for all images
+    errorOnEnlargement: false,
+    withMetadata: false,
+    quality: 75,
+    progressive: true,
+    errorOnUnusedConfig: false
+  }))
+      .pipe(size())
+      .pipe(gulp.dest(paths.jekyllImageFiles + '/drawings'))
+      .pipe(gulp.dest(paths.siteImageFiles + '/drawings'))
+      .pipe(browserSync.stream());
+  done();
+});
+
+gulp.task('build:images', gulp.series('build:images:featured', 'build:images:kitap', 'build:images:others', 'build:images:others-nonjpg', 'build:images:huge', 'build:images:drawings' ));
 
 gulp.task('clean:images', function(done) {
     del([paths.jekyllImageFiles, paths.siteImageFiles]);
