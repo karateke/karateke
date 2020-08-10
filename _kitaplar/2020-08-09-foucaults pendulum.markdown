@@ -40,10 +40,6 @@ Foucault's Pendulum, modernist bir roman değil. Post-modernizmi, yine aynı ak�
 
 Başladığımız yere dönersek, bu kitabın hayli sıkıcı ve yorucu olduğunun altını tekrar çizmeli. Plan'ın adını kitabın başından beri duysak da, onun inşa edilme sürecine kitabın ancak ikinci yarısında tanıklık edebiliyoruz. 600 küsür sayfalık romanın büyük kısmı ise, üç karakterin birbirinden uçuk teoriler, var oldukları bile muamma olan tarihsel kişilikler ve olaylar üzerine, Latince'nin olmazsa olmaz olduğu binbir referans içeren tartışmalarına ayrılmış. Eco, oldukça "deneysel" bir yöntemle, karakterlerinin bu sahte bir tarih ve teori inşa etme serüvenlerini tamamen başı boş bırakıyor. Kitabın son 50 sayfasında, yazarın sesini tekrar duymaya başlıyoruz. Bu karmaşanın ne anlama geldiğine biraz olsun vakıf olabiliyoruz. Bu kısa (ama önemli) aydınlanmaya varış için, okuyucunun türlü sıkıntılardan geçmesi gerekli miydi? Hala emin olamıyorum.
 
+---- 
 
-
-
-
-
-
-
+> I hate anyone who tries to see me as an illusion of passion.

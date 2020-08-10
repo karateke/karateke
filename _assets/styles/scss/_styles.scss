@@ -530,6 +530,10 @@ header.site-header {
     font-size: $fs3;
     margin: 3rem 0 1rem;
     color: $grey6;
+}
+
+.cat-found {
+    font-size: $fs4;
     span {
         color: $accent;
     }
@@ -975,13 +979,11 @@ header.site-header {
             margin: 4px;
             a {
                 padding: 3px 9px;
-                font-size: 13px;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
+                font-size: 14px;
             }
             @media only screen and (max-width: 480px) {
                 a {
-                    font-size: 12px;
+                    font-size: 13px;
                 }
             }
         }
@@ -1088,18 +1090,6 @@ header.site-header {
 
 .archive-wrap {
     margin: 0 5vw;
-    .cat-found {
-        padding: 2rem 0 0.3rem;
-        margin-bottom: 0;
-        font-size: $fs4;
-        font-weight: 400;
-        border-bottom: 1px solid $grey7;
-        span {
-            text-transform: uppercase;
-            color: $link;
-            font-weight: 700;
-        }
-    }
 
     // Post Listing
     
@@ -1110,7 +1100,49 @@ header.site-header {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-auto-flow: dense;
         gap: 3rem 1.5rem;
-        padding: 3rem 0;
+        padding: 2.5rem 0;
+        .referral {
+            grid-column: 1/-1;
+            background: linear-gradient(122deg, rgba(48,63,78,1) 25%, rgba(80,97,113,1) 75%);
+            grid-row: 3;
+            display: grid;
+            gap: 1rem 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            max-width: 90vw;
+            overflow: hidden;
+            .refer-text {
+                grid-column: 1/-2;
+                display: grid;
+                place-content: center;
+                padding: 1rem;
+                p {
+                    margin: 0;
+                    color: rgba(255, 255, 255, 0.8);
+                    line-height: 1.2;
+                    text-align: center;
+                    a {
+                        color: #f39237;
+                        &:hover {
+                            color: $link;
+                        }
+                    }
+                }
+            }
+            .refer-img {
+                border: 4px solid #f39237;
+                box-shadow: 0 5px 30px 5px rgba(0,0,0,.4);
+                transition: 0.25s border-color;
+            }
+            @media (hover) { 
+                .refer-img-link:hover {
+                    .refer-img {
+                        border-color: $link;
+                    }
+                }
+            }
+        }
         .post-archive {
             .archive-image {
                 img {
@@ -1790,8 +1822,8 @@ footer {
     li .pagi-current {
         pointer-events: none;
         cursor: default;
-        border: 2px solid $grey7;
-        color: $grey7;
+        border: 2px solid $accent;
+        color: $accent;
         font-weight: 700;
         font-size: 18px;
     }  

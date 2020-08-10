@@ -3,12 +3,13 @@
 {%- include header.html -%}  
 <main class="article archive">
     <div class="archive-wrap">
-        <h1 class="page-title"><span>{{ page.autopages.display_name }}</span> etiketine sahip tüm yazılar </h1>
+        <h1 class="page-title cat-found"><span>{{ page.autopages.display_name }}</span> etiketine sahip tüm yazılar </h1>
         <section class="post-list">
         {{ content }}
         {%- for post in paginator.posts -%} 
             {%- include post-article.html -%}
         {%- endfor -%}
+        {%- include referral.html -%}
         </section>
         {%- include pagelinks.html -%}
     </div>
