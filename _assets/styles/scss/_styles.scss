@@ -17,13 +17,13 @@ body {
 }
 
 p {
-    margin: 0 0 1.55em 0;
-    line-height: 1.55;
+    margin: 0 0 1.58em 0;
+    line-height: 1.58;
 }
 
 /************ Sans *************/
 
-input, footer, nav, span a, a.link-box, time, .page-time, .page-nav-cat, .tag-cloud, h2, h3, h4, h5, h6, .post-title, figcaption, .subs-form, .sans, table, dt, .popular-number, .pub-data, .page-nav-title-link, .page-title, .refer-text {
+input, footer, nav, span a, a.link-box, time, .page-time, .page-nav-cat, .tag-cloud, h2, h3, h4, h5, h6, .post-title, figcaption, .subs-form, .sans, table, dt, .popular-item, .pub-data, .page-nav-title-link, .page-title, .refer-text {
     font-family: $sans;
     font-variant-numeric: lining-nums;
 }
@@ -36,7 +36,7 @@ span {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
-    line-height: 1.05;
+    line-height: 1.1;
     color: $text;
     text-rendering: optimizeLegibility;
     font-variant-numeric: lining-nums;
@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
 }
 
 .page-description p{
-    line-height: 1.35;
+    line-height: 1.45;
     margin: 0;
     color: $grey6;
     font-variant-numeric: lining-nums;
@@ -248,14 +248,14 @@ blockquote p{
     margin: $lh 0;
     border:1px solid rgba(0, 0, 0, 0.3);
     border-radius: 0.5em;
-    background: $accent;
+    background: $blue;
     overflow: hidden;
     p {
         margin: 0;
         color: rgba(0, 0, 0, 0.7);
         padding: 1.2rem;
         font-size: $fs5;
-        background-color: $grey1;
+        background-color: $cream;
     }
     h2, h3, h4 {
         font-size: $fs6;
@@ -619,7 +619,7 @@ header.site-header {
 /************ Page info *************/
 
 .post-info {
-    line-height: 1.125;
+    line-height: 1.1;
     font-size: $fs7;
     padding: 0.4em 0;
     display: flex;
@@ -898,7 +898,7 @@ header.site-header {
 
     td {
 	   padding: 1em;
-       line-height: 1.125;
+       line-height: 1.1;
        white-space:pre;
        text-align: center;
     }
@@ -1058,7 +1058,7 @@ header.site-header {
             border-radius: 4px;
         }
         h4 {
-            margin: 0.8rem 0 0.4rem;
+            margin: 0.6rem 0 0.5rem;
             font-size: 1em;
             font-weight: 700;
         }
@@ -1170,7 +1170,7 @@ header.site-header {
                     .summary {
                         margin: 0 0 0.5rem;
                         font-size: $fs5;
-                        line-height: 1.4;
+                        line-height: 1.45;
                         color: $grey6;
                     }
                 }
@@ -1464,7 +1464,7 @@ label {
                 }
                 p {
                     font-size: $fs5;
-                    line-height: 1.4;
+                    line-height: 1.45;
                     color: $grey6;
                     margin-bottom: 0.1em;
                 }
@@ -1745,7 +1745,7 @@ footer {
             .page-nav-title-link {
                 font-size: 1em;
                 font-weight: 700;
-                line-height: 1.125;
+                line-height: 1.1;
                 margin-top: 1rem;
             }
             .page-nav-cat {
@@ -1929,7 +1929,7 @@ footer {
 
 .search-results a{
     margin: 1em 0 0 0;
-    line-height: 1.125;
+    line-height: 1.1;
     font-weight: 700;
     background: none !important;
 }
